@@ -1,0 +1,17 @@
+Hello World!
+
+<file src="./file1.txt">
+File 1 Content
+</file>
+<file src="./file2.txt">
+File 2 Content
+</file>
+<file src="./file3.txt">
+<file src="./subdir/file4.txt">
+<file src="./subdir/file5.txt">
+File 5 Content
+</file>
+</file>
+</file>
+
+Bye

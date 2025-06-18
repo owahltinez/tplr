@@ -1,0 +1,7 @@
+Hello {{ NAME }}!
+
+<file src="./file1.txt" />
+<file src="./file2.txt"></file>
+<file src="./file3.txt"/>
+
+Bye
