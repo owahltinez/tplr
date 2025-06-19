@@ -17,4 +17,4 @@ classifiers = [
 dependencies = []
 
 [project.scripts]
-prompt-parser = "tplr.main:main"
+tplr = "tplr.main:main"
