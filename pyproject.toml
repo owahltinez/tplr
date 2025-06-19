@@ -17,4 +17,4 @@ classifiers = [
 dependencies = []
 
 [project.scripts]
-tplr = "tplr.main:main"
+tplr = "tplr.__main__:main"
