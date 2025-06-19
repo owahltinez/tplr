@@ -67,12 +67,15 @@ def process_template_content(
   Returns:
       str: The parsed content string.
   """
+  # Default values when not provided.
+  root_path = root_path or pathlib.Path(os.curdir)
+  variables = variables or dict()
 
   # Bake the arguments into the function that will be used for subtitution.
   re_fn = functools.partial(
     _replace_file_tag,
-    root_path=root_path or pathlib.Path(os.curdir),
-    variables=variables or dict(),
+    root_path=root_path,
+    variables=variables,
     keep_tags=keep_tags,
   )
 

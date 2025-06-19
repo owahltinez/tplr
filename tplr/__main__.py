@@ -1,7 +1,7 @@
 import pathlib
 import sys
 import argparse
-import lib as tplr
+from . import lib as tplr
 
 
 def main():
@@ -32,7 +32,7 @@ def main():
     content=content,
     root_path=root_path,
     variables=tplr.load_env_file(args.env) if args.env else None,
-    keep_tags=args.tag,
+    keep_tags=args.keep_tags,
   )
 
   # Output to file or stdout.
