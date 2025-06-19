@@ -1,7 +1,7 @@
 import pathlib
 import sys
 import argparse
-from . import lib as tplr
+import lib as tplr
 
 
 def main():

@@ -1,6 +1,6 @@
 import pathlib
 import unittest
-from . import lib as tplr
+import lib as tplr
 
 TEST_ROOT = pathlib.Path(__file__).parent / 'test'
 
