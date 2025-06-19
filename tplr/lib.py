@@ -25,7 +25,7 @@ def _replace_file_tag(
   src = match.group(1)
   if src.startswith("http://") or src.startswith("https://"):
     # Fetch from network
-    relpath = src
+    relpath = root_path
     with urllib.request.urlopen(src) as response:
       content = response.read().decode()
   else:
@@ -68,7 +68,7 @@ def process_template_content(
       str: The parsed content string.
   """
   # Default values when not provided.
-  root_path = root_path or pathlib.Path(os.curdir)
+  root_path = root_path or pathlib.Path.cwd()
   variables = variables or dict()
 
   # Bake the arguments into the function that will be used for subtitution.
