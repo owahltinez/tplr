@@ -24,7 +24,7 @@ def main():
     with open(args.file) as f:
       content = f.read()
   else:
-    root_path = pathlib.Path(__file__).parent
+    root_path = pathlib.Path.cwd()
     content = sys.stdin.read()
 
   # Process the content.
